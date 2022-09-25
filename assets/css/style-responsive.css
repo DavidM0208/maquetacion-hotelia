@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+  --azulclaro: #48D6ED;
+  --azuloscuro: #337AB7;
+  --azulnegro: #303342;
+  --negro: #333333;
+  --negro2: #000;
+  --gris: #B2B3B3;
+  --fondo: #FFFEFC;
+  --verdeazul: #157A8A;
+  --Magenta: #9C2759;
+  --blanco: #fff;
+  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+  --degradado2: rgba(0, 0, 0, 0.2);
+  --cajaazul: #00325eae;
+  --cajanegra: rgba(0,0,0,0.59);
+}
+*{
+  margin: 0;
+  padding: 0;
+  border:0;
+  box-sizing: border-box;
+} 
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+.logo{
+      background-color: var(--negro2);
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+.logo i{
+      color: var(--blanco);
+      font-size: 2rem;
+      cursor: pointer;
+}
+.logo img{
+      max-width: 200px;
+      width: 30%;
+}
+nav{
+      background-color: rgba(1,10,52,0.838);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      position: absolute;
+      z-index: 100;
+      top: 60;
+      width: 100%;
+}
+.menu-hr{
+      width: 95%;
+      background-color: var(--blanco);
+      height: 1px;
+      margin: 2rem 0;
+}
+.menu-item{
+      padding: 1rem 0;
+}
+nav a{
+      color: var(--blanco);
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-family: 'Marcellus', serif;
+}
+nav a:hover{
+      background-color: #0B3860;
+      width: 100%;
+      text-align: center;
+}
+.btn-azul{
+      font-family: 'Marcellus', serif;
+      font-size: 1.2rem;
+      color: var(--blanco);
+      background:transparent;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+}
+button:hover{
+      background-color: #0B3860;
+      width: 100%;
+      text-align: center;
+}
+#banner{
+      padding: 0.25rem 0.25rem;
+      background-image: url("../img/slide1.jpg");
+      height: 300px;
+      background-size: cover;
+      display: flex;
+      flex-direction: column-reverse;
+      background-position: 50% 50%;
+      z-index: 0;
+}
+#banner h2{
+      padding: 0.5rem 1rem;
+      font-size: 1.5rem;
+      color: var(--blanco);
+      background-color: rgba(0, 0, 0, 0.2);
+      font-family: 'Roboto', sans-serif;
+}
+.logohotelia img{
+      display: none;
+}
+.text-description{
+      margin: 1rem;
+      text-align: justify;
+}
+#feature{
+    background-image: url("../img/bg-features.png");
+    background-size: cover;
+    padding-bottom: 1rem;
+    background-position: 50%;
+}
+#feature h2{
+      background-color: var(--degradado2);
+      color: var(--blanco);
+      text-align: center;
+      font-weight: 50;
+      padding: 1rem;
+}
+.featurecaja{
+      text-align: center;
+      color: var(--blanco);
+}
+.featurecaja h3{
+      padding: 1rem;
+}
+.featurecaja i{
+      font-size: 2rem;
+      margin: 1rem 0 0;
+}
+.box-blue{
+      background-color: var(--cajaazul);
+}
+.box-dark{
+      background-color: var(--cajanegra);
+}
+.caja-1{
+      display: inline-block;
+      border-radius: 3%;
+      padding: 1rem;
+      margin: 2rem 2rem 0;
+}
+.caja-2{
+      display: inline-block;
+      border-radius: 3%;
+      padding: 1rem;
+      margin: 2rem 2rem 1rem;
+}
+#ubication{
+      text-align: center;
+}
+#ubication h1{
+      margin: 2rem;
+      font-size: 2.5rem;
+}
+#ubication hr{
+      width: 95%;
+      background-color: var(--azuloscuro);
+      height: 1.8px;
+      margin: 0.5rem ;
+      text-align: center;
+}
+#ubication h2{
+      font-weight: 50;
+}
+.titulo1{
+      margin: 2rem 0 0 0;
+}
+.titulo2{
+      margin: 0 0 2rem 0;
+}
+#opiniones h1{
+      background-image: url(../img/vector-comentarios.png);
+      color: var(--blanco);
+      text-align: center;
+      font-size: 2rem;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+}
+.perfiles-opiniones{
+      background: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+      color: var(--blanco);
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+}
+.perfiles-opiniones img{
+      width: 100px;
+      border-radius: 50%;
+}
