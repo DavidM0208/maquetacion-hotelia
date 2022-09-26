@@ -1,198 +1,478 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-:root{
-  --azulclaro: #48D6ED;
-  --azuloscuro: #337AB7;
-  --azulnegro: #303342;
-  --negro: #333333;
-  --negro2: #000;
-  --gris: #B2B3B3;
-  --fondo: #FFFEFC;
-  --verdeazul: #157A8A;
-  --Magenta: #9C2759;
-  --blanco: #fff;
-  --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
-  --degradado2: rgba(0, 0, 0, 0.2);
-  --cajaazul: #00325eae;
-  --cajanegra: rgba(0,0,0,0.59);
+
+:root {
+      --azulclaro: #48D6ED;
+      --azuloscuro: rgb(51, 122, 183);
+      --azulnegro: #303342;
+      --negro: #333333;
+      --negro2: #000;
+      --gris: #B2B3B3;
+      --fondo: #FFFEFC;
+      --verdeazul: #157A8A;
+      --Magenta: #9C2759;
+      --blanco: #fff;
+      --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
 }
-*{
-  margin: 0;
-  padding: 0;
-  border:0;
-  box-sizing: border-box;
-} 
-body{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+
+* {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
 }
-h1,h2,h3,h4,h5{
-    font-family: 'Marcellus', serif;
+
+body {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
 }
-.logo{
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+      font-family: 'Marcellus', serif;
+}
+
+.logo {
       background-color: var(--negro2);
-      padding: 1rem;
+      padding: 1.5rem;
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
 }
-.logo i{
+
+.logo i {
       color: var(--blanco);
-      font-size: 2rem;
-      cursor: pointer;
+      font-size: 3rem;
 }
-.logo img{
+
+.logo img {
       max-width: 200px;
-      width: 30%;
+      width: 40%;
 }
-nav{
-      background-color: rgba(1,10,52,0.838);
+
+nav {
+      background-color: rgba(1, 10, 52, 0.838);
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 1rem 0;
+      padding: 1.5rem 0;
       position: absolute;
       z-index: 100;
-      top: 60;
       width: 100%;
 }
-.menu-hr{
-      width: 95%;
+
+.menu-hr {
       background-color: var(--blanco);
+      width: 95%;
       height: 1px;
-      margin: 2rem 0;
+      margin: 1rem 0;
 }
-.menu-item{
+
+.item {
       padding: 1rem 0;
 }
-nav a{
-      color: var(--blanco);
-      font-size: 1.2rem;
+
+nav a {
       text-decoration: none;
+      color: var(--blanco);
       font-family: 'Marcellus', serif;
+      font-size: 1rem;
 }
-nav a:hover{
+
+a:hover {
       background-color: #0B3860;
       width: 100%;
       text-align: center;
 }
-.btn-azul{
-      font-family: 'Marcellus', serif;
-      font-size: 1.2rem;
+
+.btn-menu {
       color: var(--blanco);
-      background:transparent;
-      padding: 1rem;
-      margin-bottom: 1rem;
+      font-family: 'Marcellus', serif;
+      font-size: 1rem;
+      background-color: transparent;
+      padding: 0.5rem;
       cursor: pointer;
 }
-button:hover{
-      background-color: #0B3860;
-      width: 100%;
-      text-align: center;
-}
-#banner{
-      padding: 0.25rem 0.25rem;
-      background-image: url("../img/slide1.jpg");
-      height: 300px;
-      background-size: cover;
+
+#banner {
       display: flex;
       flex-direction: column-reverse;
-      background-position: 50% 50%;
+      background-image: url(../img/slide1.jpg);
+      height: 400px;
+      background-size: cover;
+      background-position: 55% 45%;
+      position: relative;
       z-index: 0;
 }
-#banner h2{
-      padding: 0.5rem 1rem;
-      font-size: 1.5rem;
+
+.text_banner {
+      background-color: rgb(0, 0, 0, 0.3);
       color: var(--blanco);
-      background-color: rgba(0, 0, 0, 0.2);
       font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      padding: 0.5rem 2rem
 }
-.logohotelia img{
+
+#description {
+      padding: 1rem 1rem;
+      margin: 1rem 1rem
+}
+
+.logo-description {
       display: none;
 }
-.text-description{
-      margin: 1rem;
-      text-align: justify;
+
+#feature {
+      background-image: url(../img/bg-features.png);
+      background-size: cover;
+      padding-top: 1rem;
+      padding-bottom: 2rem;
 }
-#feature{
-    background-image: url("../img/bg-features.png");
-    background-size: cover;
-    padding-bottom: 1rem;
-    background-position: 50%;
-}
-#feature h2{
-      background-color: var(--degradado2);
-      color: var(--blanco);
-      text-align: center;
-      font-weight: 50;
-      padding: 1rem;
-}
-.featurecaja{
+
+#feature h2 {
       text-align: center;
       color: var(--blanco);
+      font-size: 1rem;
+      font-weight: 100;
+      background-color: rgb(0, 0, 0, 0.3);
+      text-shadow: 3px 3px 3px var(--negro2);
 }
-.featurecaja h3{
-      padding: 1rem;
-}
-.featurecaja i{
-      font-size: 2rem;
-      margin: 1rem 0 0;
-}
-.box-blue{
-      background-color: var(--cajaazul);
-}
-.box-dark{
-      background-color: var(--cajanegra);
-}
-.caja-1{
-      display: inline-block;
-      border-radius: 3%;
-      padding: 1rem;
-      margin: 2rem 2rem 0;
-}
-.caja-2{
-      display: inline-block;
-      border-radius: 3%;
-      padding: 1rem;
-      margin: 2rem 2rem 1rem;
-}
-#ubication{
-      text-align: center;
-}
-#ubication h1{
-      margin: 2rem;
-      font-size: 2.5rem;
-}
-#ubication hr{
-      width: 95%;
-      background-color: var(--azuloscuro);
-      height: 1.8px;
-      margin: 0.5rem ;
-      text-align: center;
-}
-#ubication h2{
-      font-weight: 50;
-}
-.titulo1{
-      margin: 2rem 0 0 0;
-}
-.titulo2{
-      margin: 0 0 2rem 0;
-}
-#opiniones h1{
-      background-image: url(../img/vector-comentarios.png);
-      color: var(--blanco);
-      text-align: center;
-      font-size: 2rem;
-      padding-top: 1.5rem;
-      padding-bottom: 1.5rem;
-}
-.perfiles-opiniones{
-      background: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
-      color: var(--blanco);
+
+.feature_row {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      align-items: center;
       margin-top: 1rem;
-      margin-bottom: 1rem;
+
 }
-.perfiles-opiniones img{
-      width: 100px;
-      border-radius: 50%;
+
+.feature-box {
+      margin-top: 1rem;
+      text-align: center;
+      padding: 1rem 1rem;
+      border-radius: 0.2rem;
+      color: var(--blanco);
+      font-size: 1rem;
+      max-width: 40%;
+
+
+}
+
+.feature-box h3 {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      margin-top: 1.5rem;
+
+
+
+}
+
+.box1 {
+      background-color: #00325eae;
+
+}
+
+.box2 {
+      background-color: rgb(0, 0, 0, 0.3);
+}
+
+#ubicacion {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1rem;
+      text-align: center;
+      margin-top: 30px;
+      padding: 5px;
+
+}
+
+#ubicacion iframe {
+      width: 100%;
+      height: 270px;
+      margin: 15px 0;
+}
+
+.direccion_ubicacion {
+      font-weight: 150;
+      text-transform: uppercase;
+      font-size: 1rem;
+      border-bottom: 1px solid var(--azuloscuro);
+      padding: 10px;
+
+}
+
+#ubicacion h2 {
+      margin-top: 10px;
+      font-size: 1rem;
+}
+
+#opiniones {
+      background-image: url(../img/vector-comentarios.svg);
+      background-repeat: repeat-x;
+      background-position: 80% -45%;
+}
+
+.titulo_opiniones {
+
+      font-size: 1rem;
+      color: var(--blanco);
+      text-align: center;
+      padding: 1rem;
+}
+.box-opciones {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 1rem 0.7rem;
+}
+.opciones-btn p {
+      padding-top: 0.5rem;
+      padding-left: 1rem;
+      color: var(--blanco);
+}
+
+.nombre-opciones {
+      display: flex;
+      justify-content: baseline;
+      flex-basis: 20% 80%;
+      color: var(--blanco);
+      align-items: center;
+      text-align: center;
+      padding: 1rem 3rem 0rem 1.5rem;
+      background-image: url(../img/Vector-opinion.png);
+      background-repeat: no-repeat;
+      background-size: 100% 90%;
+
+}
+
+.nombre {
+      padding: 1rem;
+      align-items: flex-end;
+}
+
+.opciones-btn img {
+      display: flex;
+      border-radius: 100%;
+
+
+}
+
+.opciones-btn {
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
+      height: 170px;
+      margin: 0.5rem;
+      border-radius: 0.2rem;
+}
+
+.text-opciones {
+
+      text-align: justify;
+      color: var(--blanco);
+      font-size: 0.5rem;
+}
+
+.calificacion {
+      color: var(--blanco);
+}
+
+.calificacion1 {
+      color: var(--Magenta);
+}
+
+#footer {
+      background-color: var(--negro2);
+      margin-top: 2%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      color: var(--blanco);
+      padding: 1rem;
+}
+
+.text-footer {
+      padding-top: 10px;
+      font-family: 'Marcellus', serif;
+      font-size: 0.7rem;
+      text-align: justify;
+      padding: 0.7rem;
+
+}
+
+.contac-footer {
+      margin-top: 5px;
+      padding: 5px;
+      line-height: 2rem;
+      border-bottom: 1px solid var(--blanco);
+      border-top: 1px solid var(--blanco);
+}
+
+.politicas-footer {
+      padding: 0.7rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      border-bottom: 1px solid var(--blanco);
+}
+
+.redes{
+      padding-top: 0.7rem;
+}
+
+.redes1{
+      padding: 0.7rem;
+}
+@media screen and (min-width:768px) {
+      .logo-description {
+            display: block;
+            padding: 1rem;
+            max-width: 100%;
+      }
+      .logo-description img {
+            width: 100px;
+      }
+
+      #description {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-basis: 70% 30%;
+      }
+}
+
+@media screen and (min-width:1024px) {
+      header {
+            display: flex;
+            justify-content: space-between;
+            background-color: var(--azulnegro);
+            padding: 0.3rem;
+      }
+
+      .logo {
+            background-color: var(--azulnegro);
+      }
+
+      .logo i {
+            display: none;
+      }
+
+      .logo img {
+            width: 150px;
+            background-color: var(--azulnegro);
+      }
+
+      nav {
+            flex-basis: 50%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            background-color: transparent;
+      }
+
+      nav a {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            color: var(--blanco);
+            font-family: 'Marcellus', serif;
+            font-size: 1.5rem;
+            padding: 0.5rem;
+      }
+
+      .menu-item {
+            display: flex;
+      }
+
+      a:hover {
+            background-color: transparent;
+            width: auto;
+            color: var(--azulnegro);
+      }
+
+      .menu-hr {
+            display: none;
+      }
+
+      .btn-menu {
+            background-color: var(--azuloscuro);
+            color: var(--blanco);
+            margin-right: 2%;
+            padding: 0.5rem 1rem;
+            font-family: 'Marcellus', serif;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+      }
+      #description{
+            margin: 50px;
+      }
+      .text-description{
+            text-align: justify;
+            font-size: 1.3rem;
+
+      }
+      .logo-description img{
+            width: 180px;
+            margin-left: 3rem;
+      }
+      #feature h2{
+            font-size: 2rem;
+      }
+      #feature i{
+            font-size: 2rem;
+      } 
+      #feature h3{
+            font-size: 1.2rem;
+      }
+      #ubicacion{
+            font-size: 2rem;
+      }
+      #ubicacion h2{
+            font-size: 1.5rem;
+            font-weight: 100;
+      }
+      .direccion_ubicacion{
+            border-bottom: none;
+      }
+      .ubicacion-hr{
+            background-color: var(--azuloscuro);
+            width: 95%;
+            height: 2px;
+            margin: 1rem 2rem;
+      }
+      .box-opciones{
+            display: flex;
+            flex-direction: row;
+      }
+      #opiniones{
+            background-size: 90% 70%;
+            height: 90%;
+      }
+      #opiniones h3{
+            font-size: 2.5rem;
+      }
+      #footer{
+            margin-top: 100px;
+            display: flex;
+            flex-direction: row;    
+      }
+      .text-footer{
+            display: flex;
+            align-items: center;
+      }
+      .contac-footer{
+            border-top: transparent;
+            border-bottom: transparent;
+            margin: 0 2rem;
+            line-height: 2rem;
+      }
+      .politicas-footer{
+            display: flex;
+            flex-direction: column;
+            border-top: transparent;
+            border-bottom: transparent;
+      }
 }
